@@ -52,7 +52,7 @@ def _global_version(version):
     # minor regex hack to avoid messing too much with setuptools-scm internals
     version_str = guess_next_dev_version(version)
     return re.sub(r"\.dev\d+", "", version_str)
-
+ 
 
 hash_file_rel_path = os.path.join("vyper", "vyper_git_commithash.txt")
 hashfile = os.path.relpath(hash_file_rel_path)
